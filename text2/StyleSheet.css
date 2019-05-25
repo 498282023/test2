@@ -366,18 +366,22 @@ a {
     float: right;
 }
 
-/*卡片轮播CSS*/
-
+/***轮播***/
 .wrop {
+        width: 960px;
+        height: 340px;
+    position:relative;
 }
 
     .wrop .list {
         list-style-type: none;
-        width: 150px;
-        height: 340px;
-        position:relative;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-left: 0;
+    display:inline-block;
     }
-
+    /*图片*/
 .item {
     width: 950px;
     height: 310px;
@@ -389,50 +393,80 @@ a {
     border-radius:30px;
     margin-top:10px;
     margin-left:10px;
+
+  
+    font-size: 50px;
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    opacity:0;
 }
 
     .item:nth-child(1) {
-        background-color: #984646;
+    background-color: #00CCCC;
     }
 
     .item:nth-child(2) {
-        background-color: #ff0000;
+    background-color: #1bd1a5;
     }
 
     .item:nth-child(3) {
-        background-color: #ffd800;
+    background-color: #16c383;
     }
 
     .item:nth-child(4) {
-        background-color: #b6ff00;
+    background-color: #21a67d;
     }
 
     .item:nth-child(5) {
-        background-color: #4cff00;
+    background-color: #48c0a3;
     }
-     .btn {
-            position: absolute;
-            height: 100px;
-            top:310px;
-            width: 50px;
-            z-index: 100;
-        }
-     #goNext{
-         margin-left:910px;
-     }
-     #goPre{
-         margin-left:10px;
-     }
+    
         .item.active {
             opacity: 1;
             z-index: 10;
         }
-          .pointList {
-            list-style-type: none;
+        /*左右button翻页*/
+     .btn {
             position: absolute;
-            z-index: 101;
-            top:430px;
-            margin-left:20px;
+            height: 100px;
+            top:110px;
+            width: 50px;
+            z-index: 100;
+
+   background-color: rgba(0,0,0,0.3);
+    border:0;
+    cursor:pointer;
+    font-size:50px;
+        }
+     #goNext{
+
+     }
+     #goPre{
+         margin-left:10px;
+     }
+     /*span标签是为了让翻页按钮透明时，里面 "<" ">"不透明*/
+.btn span{
+    color:white;
+}
+.btn:hover{
+    opacity:0.8;
+}
+#goPre{
+
+}
+#goNext{
+    right:0;
+}
+/*图片导航小圆点*/
+          .pointList {
+              list-style-type:none;
+    position:absolute;
+    right:20px;
+    bottom:20px;
+    position:absolute;
+    z-index:101;
         }
             .point {
             width: 8px;
@@ -442,8 +476,13 @@ a {
             margin-right: 14px;
             border: 3px solid white;
             cursor: pointer;
-            margin:2px;
+            display:inline-block;
+            margin:2px;    
+            opacity:0.8;
         } 
+            .point:hover{
+    opacity:1;
+}
              .point.active {
                 background-color: white;
             }
