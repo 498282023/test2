@@ -5,6 +5,110 @@
 a {
   text-decoration: none;
 }
+/* 控件样式 */
+input,
+textarea {
+  height: 42px;
+  width: 200px;
+  border: 1px solid #007ae6;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #4f5362;
+}
+table {
+  margin: 30px 0;
+}
+/* 下拉框样式 */
+select {
+  font-family: "微软雅黑";
+  background: rgba(0, 0, 0, 0);
+  width: 249px;
+  height: 40px;
+  font-family: MicrosoftYaHei;
+  font-size: 14px;
+  color: #4f5362;
+  line-height: 21px;
+  text-align: center;
+  border: 1px #007ae6 solid;
+  border-radius: 5px;
+}
+option {
+  color: black;
+  background: #a6e1ec;
+  line-height: 20px;
+}
+select:focus {
+  border: 2px #ddd solid;
+  box-shadow: 0 0 15px 1px #dddddd;
+}
+option:hover {
+  background: #ebccd1;
+}
+
+/*复选框*/
+
+[type="checkbox"] {
+  display: none;
+}
+label {
+  margin: 0 10px;
+}
+[type="checkbox"] + label {
+  background-color: white;
+  border-radius: 0px;
+  border: 1px solid #d3d3d3;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  text-align: center;
+  line-height: 10px;
+  font-size: 2px;
+}
+
+[type="checkbox"] + label:hover {
+  border: 1px solid #2783fb;
+}
+
+[type="checkbox"]:checked + label {
+  background-color: #eee;
+  background: #2783fb;
+}
+
+[type="checkbox"]:checked + label:after {
+  content: "\2714";
+  color: white;
+}
+/*单选按钮*/
+[type="radio"] {
+  display: none;
+}
+[type="radio"] + label {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: bottom;
+  border: 1px solid gray;
+  border-radius: 50%;
+}
+
+[type="radio"] + label:hover {
+  border: 1px solid #2783fb;
+  cursor: pointer;
+}
+
+[type="radio"]:checked + label {
+  background: #2783fb;
+  border: 1px solid #2783fb;
+}
+
+[type="radio"]:checked + label:after {
+  content: "\2022";
+  font-size: 35px;
+  color: white;
+}
+
 .container {
   width: 1280px;
   margin: 0 auto;
@@ -215,110 +319,14 @@ a {
   color: #a8acb9;
   letter-spacing: 0.28px;
 }
-input {
-  height: 42px;
-  width: 200px;
-  border: 1px solid #007ae6;
-  border-radius: 5px;
-  font-size: 14px;
-color: #4F5362;
-}
-table {
-  margin: 30px 0;
-}
-/* 下拉框样式 */
-select {
-  font-family: "微软雅黑";
-  background: rgba(0, 0, 0, 0);
-  width: 249px;
-  height: 40px;
+
+.worming {
   font-family: MicrosoftYaHei;
-  font-size: 14px;
-  color: #4f5362;
-  line-height: 21px;
-  text-align: center;
-  border: 1px #007ae6 solid;
-  border-radius: 5px;
+  font-size: 10px;
+  color: #fb432a;
+  letter-spacing: 1.11px;
 }
-option {
-  color: black;
-  background: #a6e1ec;
-  line-height: 20px;
+#gongsijianjie{
+    height: 100px;
+    padding: 20px;
 }
-select:focus {
-  border: 2px #ddd solid;
-  box-shadow: 0 0 15px 1px #dddddd;
-}
-option:hover {
-  background: #ebccd1;
-}
-.worming{
-    font-family: MicrosoftYaHei;
-font-size: 10px;
-color: #FB432A;
-letter-spacing: 1.11px;
-}
-  /*复选框*/
-
-  [type="checkbox"] {
-    display:none;
-}
-label{
-
-        margin:0 10px;
-}
-    [type="checkbox"] + label {
-        background-color: white;
-        border-radius: 0px;
-        border: 1px solid #d3d3d3;
-        width: 10px;
-        height: 10px;
-        display: inline-block;
-        text-align: center;
-        line-height: 10px;
-        font-size:2px;
-    }
-
-        [type="checkbox"] + label:hover {
-            border: 1px solid #2783FB;
-        }
-
-    [type="checkbox"]:checked + label {
-        background-color: #eee;
-        background: #2783FB;
-    }
-
-        [type="checkbox"]:checked + label:after {
-            content: "\2714";
-            color: white;
-        }
-/*单选按钮*/
-[type="radio"] {
-    display: none;
-}
-    [type="radio"] + label {
-        width: 20px;
-        height: 20px;
-        line-height: 20px;
-        display: inline-block;
-        text-align: center;
-        vertical-align: bottom;
-        border: 1px solid gray;
-        border-radius: 50%;
-    }
-
-        [type="radio"] + label:hover {
-            border: 1px solid #2783FB;
-            cursor: pointer;
-        }
-
-    [type="radio"]:checked + label {
-        background: #2783FB;
-        border: 1px solid #2783FB;
-    }
-
-        [type="radio"]:checked + label:after {
-            content: "\2022";
-            font-size: 35px;
-            color: white;
-        }

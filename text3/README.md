@@ -27,34 +27,3 @@ input上传file更改样式稍微复杂点
 
 复选框 单选框按钮的美化
 
- /*单选按钮*/
-
-        [type="radio"] {
-            display: none;
-        }
-            [type="radio"] + label {
-                width: 20px;
-                height: 20px;
-                line-height: 20px;
-                display: inline-block;
-                text-align: center;
-                vertical-align: bottom;
-                border: 1px solid gray;
-                border-radius: 50%;
-            }
-
-                [type="radio"] + label:hover {
-                    border: 1px solid #2783FB;
-                    cursor: pointer;
-                }
-
-            [type="radio"]:checked + label {
-                background: #2783FB;
-                border: 1px solid #2783FB;
-            }
-
-                [type="radio"]:checked + label:after {
-                    content: "\2022";
-                    font-size: 35px;
-                    color: white;
-                }
