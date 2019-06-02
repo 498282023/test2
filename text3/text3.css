@@ -258,3 +258,67 @@ font-size: 10px;
 color: #FB432A;
 letter-spacing: 1.11px;
 }
+  /*复选框*/
+
+  [type="checkbox"] {
+    display:none;
+}
+label{
+
+        margin:0 10px;
+}
+    [type="checkbox"] + label {
+        background-color: white;
+        border-radius: 0px;
+        border: 1px solid #d3d3d3;
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        text-align: center;
+        line-height: 10px;
+        font-size:2px;
+    }
+
+        [type="checkbox"] + label:hover {
+            border: 1px solid #2783FB;
+        }
+
+    [type="checkbox"]:checked + label {
+        background-color: #eee;
+        background: #2783FB;
+    }
+
+        [type="checkbox"]:checked + label:after {
+            content: "\2714";
+            color: white;
+        }
+/*单选按钮*/
+[type="radio"] {
+    display: none;
+}
+    [type="radio"] + label {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        display: inline-block;
+        text-align: center;
+        vertical-align: bottom;
+        border: 1px solid gray;
+        border-radius: 50%;
+    }
+
+        [type="radio"] + label:hover {
+            border: 1px solid #2783FB;
+            cursor: pointer;
+        }
+
+    [type="radio"]:checked + label {
+        background: #2783FB;
+        border: 1px solid #2783FB;
+    }
+
+        [type="radio"]:checked + label:after {
+            content: "\2022";
+            font-size: 35px;
+            color: white;
+        }
